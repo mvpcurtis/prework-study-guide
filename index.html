@@ -24,7 +24,9 @@
 			<div class="container">
 				<nav id="navbar">
 					<!-- Logo -->
-					<img src="assets/images/bowtie-cat.png" alt="Bowtie Cat" srcset="" />
+					<a href="index.html"
+						><img src="assets/images/bowtie-cat.png" alt="Bowtie Cat" srcset=""
+					/></a>
 					<!-- Navigation Links -->
 					<ul>
 						<li><a href="#html">HTML</a></li>
@@ -71,16 +73,114 @@
 				<div class="container">
 					<h2 class="card-title">CSS (Cascading Stylesheet)</h2>
 					<ul>
-						<li>Think of HTML as the bricks and structure of a house.</li>
+						<li>
+							Think of CSS as decoration for the house. The colours of the
+							walls, socket faces, skirt etc.
+						</li>
+						<li>
+							When dealing with CSS, keep in mind the "box model". Everything in
+							CSS has a box around it.
+						</li>
+						<li>The "box model" layout:</li>
+						<ol>
+							<li>Start off with your content.</li>
+							<li>
+								Then padding is what adds space on the inside of the content
+								box.
+							</li>
+							<li>
+								Then comes a border which sits inbetween the padding and the
+								margin.
+							</li>
+							<li>
+								Then comes a margin that adds space on the outside of the
+								content box.
+							</li>
+						</ol>
+						<li>Files end in ".css".</li>
+						<li>
+							There are three ways to add CSS to a webpage:
+							<ol>
+								<li>
+									Inline: inline CSS is added to HTML elemant itself. It can
+									"only effect" that elemant.
+								</li>
+								<li>
+									Internal: internal CSS is created in the same document as your
+									HTML but typically resides in the HEAD. This is also a bad
+									practice since it can "only effect" the HTML in that document.
+								</li>
+								<li>
+									External: external CSS is what is most commonly used. External
+									CSS has it's own document and can be linked into as many HTML
+									documents as you'd like.
+								</li>
+							</ol>
+						</li>
+
+						<li>
+							CSS3 has a lot of new great features. One of them being variables!
+							You can now add custom variables to your CSS.
+						</li>
 					</ul>
 				</div>
 			</section>
 			<!-- Section: GIT -->
 			<section id="git">
 				<div class="container">
-					<h2 class="card-title">GIT</h2>
+					<h2 class="card-title">GIT & GitHub</h2>
 					<ul>
-						<li>Think of HTML as the bricks and structure of a house.</li>
+						<li>
+							GIT isn't like the other topics in this guide. GIT is a version
+							control system which lets you take snapshots of your project and
+							fork off from that project.
+						</li>
+						<li>
+							GitHub is an online service used to store and hold your
+							repositorys.
+						</li>
+						<li>
+							GIT & GitHub allows for many users to work and write on the same
+							code/project at the same time!
+						</li>
+						<li>
+							GIT & GitHub are great for preventing the main from being broken.
+						</li>
+						<li>
+							GIT was created by the same person who created Linux, Linus
+							Torvalds.
+						</li>
+						<li>
+							GIT operates on your computer via the terminal. You don't need to
+							register for account, just download and install.
+						</li>
+						<li>Here are a few of the commands and what they do:</li>
+						<ul>
+							<li>
+								git pull origin *branch* / pulls the lastest version of that
+								branch from GitHub.
+							</li>
+							<li>git checkout -b *branch* / creates a new branch.</li>
+							<li>
+								git checkout *branch* or git switch *branch* / allows you to
+								change what branch you're on in your repository.
+							</li>
+							<li>
+								git add -A / adds your branch to the processing area ready for
+								you to commit.
+							</li>
+							<li>
+								git commit -m "your message" / commits the work in the
+								repository and branch you're in ready to push to GitHub.
+							</li>
+							<li>git push origin *branch* / pushes your work to GitHub.</li>
+							<li>
+								git push origin --delete *branch* / deletes the branch from
+								GitHub and your workflow.
+							</li>
+							<li>git status / checks to see what branch your working on.</li>
+						</ul>
+						<li>GitHub pages allows you to host your repository for free!</li>
 					</ul>
 				</div>
 			</section>
@@ -89,7 +189,60 @@
 				<div class="container">
 					<h2 class="card-title">JS (JavaScript)</h2>
 					<ul>
-						<li>Think of HTML as the bricks and structure of a house.</li>
+						<li>
+							Look at JavaScript as if it's the functionality in an house. Doors
+							that open and close, light being switched on or off, radiatores
+							heating up your home etc.
+						</li>
+						<li>
+							JavaScript is going to be hardest topic to wrap your hear around
+							since it's the only fully-fledged programming language in this
+							guide.
+						</li>
+						<li>JS can make decisions based on the code passed into it.</li>
+						<li>
+							JS has a control flow that reads from top of the page to the
+							bottom. This can be interupted a few different ways such as
+							conditional statements and loops.
+						</li>
+						<li>
+							Conditional statements are a way we introduce decision making
+							(like I mentioned above) into our code.
+						</li>
+						<li>
+							Variables are a container hat store data. An example would be a
+							box called teddy which contains a stuffed animal inside.
+						</li>
+						<li>
+							Arrays are similar to variables but these can hold multiple data
+							types at the same time and is
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive"
+								target="_blank"
+								>mutable</a
+							>.
+						</li>
+						<li>Loops are used to perform a task multiple times over.</li>
+						<li>
+							Functions are blocks of code that do not run on their own. They
+							have be called somewhere on the document and they can be called
+							multiple times over.
+						</li>
+						<li>
+							Math.floor & Math.random are both properties of JavaScripts built
+							in math object can can be used together to create a random number.
+						</li>
+						<li>
+							A script tage typically sits on the bottom of your code just
+							before the &lt;/body&gt; tag. This is so the page can render
+							before the script can be ran. Running the script before the
+							content is render can lead to things not loading correctly.
+						</li>
+						<li>
+							Like CSS, JS can be internal and external. For the same reasons as
+							CSS, it's best practice to use an external script document which
+							ends in .js.
+						</li>
 					</ul>
 				</div>
 			</section>
