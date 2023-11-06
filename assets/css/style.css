@@ -1,136 +1,165 @@
 /* Fonts */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); */
 
+:root {
+	--color-one: #023047;
+	--color-two: #8ecae6;
+	--color-three: #219ebc;
+	--color-four: #ffb703;
+	--color-five: #fb8500;
+	--color-six: #03496b;
+	--color-seven: #011a26;
+
+	--color-white: #fff;
+	--color-black: #000;
+	--color-red: #e63946;
+}
+
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 /* Webpage */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1rem;
-    font-weight: normal;
-    line-height: 1.6;
-    background-color: #023047;
-    color: #8ecae6;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.6;
+	background-color: var(--color-one);
+	color: var(--color-two);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 
 header {
-    width: 100%;
-    min-height: 10vh;
-    background-color: #219ebc;
-    display: flex;
-    align-items: center;
+	width: 100%;
+	min-height: 10vh;
+	background-color: var(--color-three);
+	display: flex;
+	align-items: center;
 }
 
 .container {
-    width: 926px;
-    margin: 0 auto;
+	width: 926px;
+	margin: 0 auto;
 }
 
 nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-nav ul, footer ul {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+nav ul,
+footer ul {
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-nav ul li, footer ul li {
-    list-style-type: none;
+nav ul li,
+footer ul li {
+	list-style-type: none;
 }
 
-nav ul li a, footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.1s ease-in-out;
-    padding: 0.5em 0.75em;
+nav ul li a,
+footer ul li a {
+	color: var(--color-white);
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: color 0.1s ease-in-out;
+	padding: 0.5em 0.75em;
 }
 
 nav ul li a:hover {
-    color: #ffb703;
+	color: var(--color-four);
 }
 
 header img {
-    width: 50px;
-    height: 50px;
+	width: 50px;
+	height: 50px;
 }
 
 section {
-    padding: 5em 0;
+	padding: 5em 0;
 }
 
 section h2 {
-    font-size: 1.5rem;
-    color: #fff;
+	font-size: 1.5rem;
+	color: var(--color-white);
 }
 
 #hero {
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fb8500;
-    color: #023047;
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--color-five);
+	color: var(--color-one);
 }
 
 section#hero h2 {
-    font-size: 3rem;
-    color: #023047
+	font-size: 3rem;
+	color: var(--color-one);
 }
 
 #hero p {
-    font-size: 1.75rem;
+	font-size: 1.75rem;
 }
 
-section#html { background-color: #023047; }
-section#css { background-color: #03496b; }
-section#git, section#git h2 { background-color: #ffb703; color: #023047; }
-section#javascript { background-color: #011a26 }
+section#html {
+	background-color: var(--color-one);
+}
+section#css {
+	background-color: var(--color-six);
+}
+section#git,
+section#git h2 {
+	background-color: var(--color-four);
+	color: #023047;
+}
+section#javascript {
+	background-color: var(--color-seven);
+}
 
 footer {
-    padding: 2em 0;
-    width: 100%;
-    color: #fff;
+	padding: 2em 0;
+	width: 100%;
+	color: var(--color-white);
 }
 
 footer > .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 footer ul {
-    width: 25%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+	width: 25%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 footer ul li a {
-    font-weight: normal;
-    text-transform: none;
+	font-weight: normal;
+	text-transform: none;
 }
 
 footer ul li a:hover {
-    color: #8ecae6;
+	color: var(--color-two);
 }
 
 footer span i {
-    color: #e63946;
+	color: var(--color-red);
 }
